@@ -42,4 +42,6 @@ case 'dangnhap':
 }
 }
 include_once './view/footer.php';
+
 ?>
+
