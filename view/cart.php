@@ -2,7 +2,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 text-center">
-                    <h2 class="breadcrumb-title">Giỏ Hàng</h2>
+                    <h2 class="breadcrumb-title"><?=$tieudetrang?></h2>
                     <!-- breadcrumb-list start -->
                     <ul class="breadcrumb-list">
                         <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>

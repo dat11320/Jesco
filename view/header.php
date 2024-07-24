@@ -3,6 +3,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="robots" content="index, follow" />
     <title>Jesco - Fashoin eCommerce HTML Template</title>
+     <!-- <title><?=$tieudetrang?></title> -->
     <meta name="description" content="Jesco - Fashoin eCommerce HTML Template" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
@@ -29,7 +30,7 @@
                 <div class="row">
                     <div class="col-auto align-self-center">
                         <div class="header-logo">
-                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="Site Logo" /></a>
+                            <a href="index.php"><img src="assets/images/logo/logo.png" alt="Site Logo" /></a>
                         </div>
                     </div>
                     <div class="col align-self-center d-none d-lg-block">
@@ -41,23 +42,23 @@
                                 <li class="dropdown position-static"><a href="index.php?page=sanpham">Sản Phẩm</a>
                                     
                                 </li>
-                                <li class="dropdown "><a href="blog-single.html">Blogs </a>
+                                <li class="dropdown "><a href="#">Blogs </a>
                                     <ul class="sub-menu">
                                         
                                        
                                        
                                     </ul>
                                 </li>
-                                <li><a href="about.html">About us</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="index.php?page=about">Về Chúng Tôi</a></li>
+                                <li><a href="index.php?page=lienhe">Liên hệ</a></li>
                             </ul>
                         </div>
                     </div>
                     <!-- Header Action Start -->
                     <div class="col col-lg-auto align-self-center pl-0">
                         <div class="header-actions">
-                            <a href="index.php?page=dangnhap" class=" login-btn" 
-                                >Sign In</a>
+                            <a href="index.php?page=dangnhap.php" class=" login-btn" 
+                                >Đăng nhập</a>
                             <!-- Single Wedge Start -->
                             <a href="#" class="header-action-btn" data-bs-toggle="modal" data-bs-target="#searchActive">
                                 <i class="pe-7s-search"></i>
@@ -66,7 +67,7 @@
                             <!-- Single Wedge Start -->
                             
                             <!-- Single Wedge End -->
-                            <a href="wishlist.html"
+                            <a href="index.php?page=cart"
                                 class="header-action-btn header-action-btn-cart  pr-0">
                                 <i class="pe-7s-shopbag"></i>
                                 <span class="header-action-num">01</span>

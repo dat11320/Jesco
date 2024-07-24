@@ -12,7 +12,8 @@ foreach ($dssp_all as $item) {
                                                         <img class="hover-image" src="'.$img.'" alt="Product" />
                                                     </a>
                                                     <span class="badges">
-                                                        <span class="new">New</span>
+                                                        <span class="sale">sale</span>
+                                                        <span class="new">new</span>
                                                     </span>
                                                     <div class="actions">
                                                         <a href="wishlist.html" class="action wishlist" title="Wishlist"><i class="pe-7s-like"></i></a>
@@ -27,13 +28,15 @@ foreach ($dssp_all as $item) {
                                                         <span class="rating-wrap">
                                                             <span class="star" style="width: 100%"></span>
                                                         </span>
-                                                        <span class="rating-num">( 5 Review )</span>
+                                                        <span class="rating-num">( '.$so_luot_xem.' )</span>
                                                     </span>
                                                     <h5 class="title"><a href="single-product.html">'.$ten_sp.'
                                                         </a>
                                                     </h5>
                                                     <span class="price">
-                                                        <span class="new">'.$gia.'</span>
+                                                        <span class="new">'.$gia.'đ</span>
+                                                        <del>'.$giam_gia.'</del>
+                                                        
                                                     </span>
                                                 </div>
                                           </div>
@@ -58,7 +61,7 @@ foreach($dsdm_all as $item){
                 <!-- breadcrumb-list start -->
                 <ul class="breadcrumb-list">
                     <li class="breadcrumb-item"><a href="index.php">Trang Chủ</a></li>
-                    <li class="breadcrumb-item active">Sản phẩm</li>
+                    <li class="breadcrumb-item active"><?=$tieudetrang?></li>
                 </ul>
                 <!-- breadcrumb-list end -->
             </div>
@@ -73,7 +76,7 @@ foreach($dsdm_all as $item){
                 <!-- Shop Top Area Start -->
                 <div class="shop-top-bar d-flex">
                     <!-- Left Side start -->
-                    <p><span>12</span> Product Found of <span>30</span></p>
+                    <p><span>12</span> sản phẩm của <span>30</span></p>
                     <!-- Left Side End -->
                     <div class="shop-tab nav">
                         <a class="active" href="#shop-grid" data-bs-toggle="tab">
@@ -111,14 +114,13 @@ foreach($dsdm_all as $item){
                                 <div class="tab-pane fade show active" id="shop-grid">
                                     <div class="row mb-n-30px">
                                     <?= $html_showdssp ?>
-                                    <!-- <?= $txt_html_spmoi?> -->
-
+                                    
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-                    </div>
+                    </div><br>
                     
 
 
@@ -128,7 +130,14 @@ foreach($dsdm_all as $item){
 
                    <!-- Hiển thị số trang -->
                     <div class="row">
-                        <span>dlsfksjfkl</span>
+                        
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item"><a class="page-link" href="#"><<</a></li>
+                                    <?=$hienthisotrang?>
+                                <li class="page-item"><a class="page-link" href="#">>></a></li>
+                            </ul>
+                        </nav>
         
                     </div>
                 </div>
@@ -140,9 +149,9 @@ foreach($dsdm_all as $item){
                 <div class="shop-sidebar-wrap">
                     <!-- Sidebar single item -->
                     <div class="sidebar-widget-search">
-                        <form id="widgets-searchbox" action="#">
-                            <input class="input-field" type="text" placeholder="Tìm kiếm tại đây...">
-                            <button class="widgets-searchbox-btn" type="submit">
+                        <form id="widgets-searchbox" method="POST">
+                            <input class="input-field" name="kyw" type="text" placeholder="Tìm kiếm tại đây...">
+                            <button class="widgets-searchbox-btn" type="submit" name="timkiem">
                                 <i class="fa fa-search"></i>
                             </button>
                         </form>

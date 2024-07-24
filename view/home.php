@@ -277,7 +277,7 @@ foreach ( $sp_hot as $item){
                         </div>
                         
                     </div>
-                    <a href="shop-left-sidebar.html" class="btn btn-lg btn-primary btn-hover-dark m-auto"> Load More <i
+                    <a href="index.php?page=sanpham" class="btn btn-lg btn-primary btn-hover-dark m-auto mb-3"> Xem thêm <i
                             class="fa fa-arrow-right ml-15px" aria-hidden="true"></i></a>
                 </div>
             </div>
@@ -301,7 +301,7 @@ foreach ( $sp_hot as $item){
                         </div>
                         
                     </div>
-                    <a href="shop-left-sidebar.html" class="btn btn-lg btn-primary btn-hover-dark m-auto"> Load More <i
+                    <a href="index.php?page=sanpham" class="btn btn-lg btn-primary btn-hover-dark m-auto mb-3"> Xem thêm <i
                             class="fa fa-arrow-right ml-15px" aria-hidden="true"></i></a>
                 </div>
             </div>
@@ -325,7 +325,7 @@ foreach ( $sp_hot as $item){
                         </div>
                         
                     </div>
-                    <a href="shop-left-sidebar.html" class="btn btn-lg btn-primary btn-hover-dark m-auto"> Load More <i
+                    <a href="index.php?page=sanpham" class="btn btn-lg btn-primary btn-hover-dark m-auto"> Xem thêm <i
                             class="fa fa-arrow-right ml-15px" aria-hidden="true"></i></a>
                 </div>
             </div>
