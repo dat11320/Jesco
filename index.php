@@ -70,4 +70,5 @@ switch($page){
     }
 }
 include_once './view/footer.php';
+// skjfsdakkjshkjfsj
 ?>
