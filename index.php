@@ -1,4 +1,7 @@
 <?php
+session_start();
+ob_start();
+include_once './model/user.php';
 include_once './model/conect.php';
 include_once './model/global.php';
 include_once './model/product.php';
@@ -55,9 +58,7 @@ switch($page){
     
         include_once 'view/cart.php';
           break;
-    case 'dangnhap':
-        include_once 'view/dangnhap.php';
-        break;
+        
     case 'lienhe':
             include_once 'view/lienhe.php';
         break;
@@ -67,6 +68,27 @@ switch($page){
         default: 
         include_once 'view/home.php';
     break;
+    case 'dangnhap':
+        if(isset($_POST['btn-dangky'])){
+           $username=$_POST['username'];
+           $email=$_POST['email'];
+           $password=$_POST['password'];
+    //insert den db
+    $iduser=insert_user($username,$password,$email);
+    //dang nhap
+    //ghi nhan user vao session
+    $_SESSION['iduser']=$iduser;
+    //chuyen den trang gi do khi thanh cong
+    header('location: index.php');
+        }
+        include_once 'view/dangnhap.php';
+        break;
+        case 'logout':
+            if(isset($_SESSION['iduser'])){
+                unset($_SESSION['iduser']);
+                header('location: index.php');
+            }
+            break;
     }
 }
 include_once './view/footer.php';
