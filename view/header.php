@@ -58,16 +58,33 @@
                     <div class="col col-lg-auto align-self-center pl-0">
                         <div class="header-actions">
                             <a href="index.php?page=dangnhap.php" class=" login-btn" 
-                                >Đăng nhập</a>
+                                ></a>
+                                <div class="header-actions">
+                            <?php 
+                            if(isset($_SESSION['iduser'])){
+                                echo '<a href="index.php?page=dangnhap" class=" login-btn" 
+                                >'.$_SESSION['iduser'].'</a>
+                            ';
+                            echo '<a href="index.php?page=logout" class=" login-btn" 
+                                >thoat</a>
+                            ';
+                            }else{
+                                echo'<a href="index.php?page=dangnhap" class=" login-btn" 
+                                >Đăng Ký / Đăng Nhập</a>
                             <!-- Single Wedge Start -->
+                            ';
+                            }
+                            ?>
                             <a href="#" class="header-action-btn" data-bs-toggle="modal" data-bs-target="#searchActive">
                                 <i class="pe-7s-search"></i>
                             </a>
+                            
                             <!-- Single Wedge End -->
                             <!-- Single Wedge Start -->
                             
                             <!-- Single Wedge End -->
                             <a href="index.php?page=cart"
+                            <a href="wishlist.html"
                                 class="header-action-btn header-action-btn-cart  pr-0">
                                 <i class="pe-7s-shopbag"></i>
                                 <span class="header-action-num">01</span>
@@ -80,6 +97,24 @@
                         </div>
                         <!-- Header Action End -->
                     </div>
+                            <!-- Single Wedge Start -->
+                            
+                            <!-- Single Wedge End -->
+                            <!-- Single Wedge Start -->
+                            
+                            <!-- Single Wedge End -->
+                            
+                            <a href="cart.html"
+                                class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
+                                <i class="pe-7s-menu"></i>
+                            </a>
+                        </div>
+                        <!-- Header Action End -->
+                    </div>
                 </div>
             </div>
     </header>
+
+
+
+   

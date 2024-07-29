@@ -34,7 +34,7 @@
                             <div id="lg1" class="tab-pane active">
                                 <div class="login-form-container">
                                     <div class="login-register-form">
-                                        <form action="#" method="post">
+                                        <form action="" method="post">
                                             <input type="text" name="user-name" placeholder="Username" />
                                             <input type="password" name="user-password" placeholder="Password" />
                                             <div class="button-box">
@@ -52,12 +52,14 @@
                             <div id="lg2" class="tab-pane">
                                 <div class="login-form-container">
                                     <div class="login-register-form">
-                                        <form action="#" method="post">
-                                            <input type="text" name="user-name" placeholder="Username" />
-                                            <input type="password" name="user-password" placeholder="Password" />
-                                            <input name="user-email" placeholder="Email" type="email" />
+                                        <form action="index.php?page=dangnhap" method="post">
+                                            <input type="text" name="username" placeholder="Username" id="username" require/>
+                                            <input name="email" placeholder="Email" type="email" id="email" require />
+                                            <input type="password" name="password" placeholder="Password" id="password" require/>
+                                            <input name="password-rp"  placeholder="Password-rp" type="password" id="passpord-rp" require/>
+                                            
                                             <div class="button-box">
-                                                <button type="submit"><span>Register</span></button>
+                                                <button name="btn-dangky" type="submit"><span>Register</span></button>
                                             </div>
                                         </form>
                                     </div>
