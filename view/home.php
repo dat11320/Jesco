@@ -296,7 +296,7 @@ foreach ( $sp_hot as $item){
                         <!-- 1st tab start -->
                         <div class="tab-pane fade show active" id="tab-product--all">
                             <div class="row">  
-                           222222
+                            <?=$txt_html_sp_bestseller;?>
                             </div>
                             
                         </div>
