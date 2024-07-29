@@ -8,6 +8,10 @@ include_once './model/product.php';
 include_once './model/shop.php';
 include_once './view/header.php';
 
+if(!isset($_SESSION['giohang'])){
+    $_SESSION['giohang']=[];
+}
+
 if(!isset($_GET['page'])){
     $spmoi=get_all_product(0, 8,"");
     $sp_bestseller=get_all_product_bestseller(8);
@@ -53,9 +57,43 @@ switch($page){
         include_once 'view/chitietsp.php';
     break;
     
+
+    case 'viewcart':
+        $tieudetrang = "Giỏ hàng";
+        if(isset($_GET['iddel'])&&($_GET['iddel']>=0)){
+            array_splice($_SESSION['giohang'],$_GET['iddel'],1);
+            header('location: index.php?page=viewcart');
+
+        }
+        if(isset($_GET['delall'])&&($_GET['delall']==1)){
+            $_SESSION['giohang']=[];
+            header('location: index.php?page=viewcart');
+
+        }
+        include_once 'view/viewcart.php';
+        break;
     case 'cart':
         $tieudetrang = "Giỏ hàng";
-    
+        if (isset($_POST['btncart'])){
+            $id = $_POST['id'];
+            $tensp = $_POST['tensp'];
+            $hinh = $_POST['hinh'];
+            $gia = $_POST['gia'];
+            $soluong = $_POST['soluong'];
+            $thanhtien= $gia*$soluong;
+
+        $sp =[
+            'id'=>$id,
+            'tensp'=>$tensp,
+            'hinh'=>$hinh,
+            'gia'=>$gia,
+            'soluong'=>$soluong,
+            'thanhtien'=>$thanhtien
+        ];
+        array_push($_SESSION['giohang'],$sp);
+        header('location: index.php?page=viewcart');
+
+        }
         include_once 'view/cart.php';
           break;
         

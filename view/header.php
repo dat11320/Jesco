@@ -83,8 +83,8 @@
                             <!-- Single Wedge Start -->
                             
                             <!-- Single Wedge End -->
-                            <a href="index.php?page=cart"
-                            <a href="wishlist.html"
+                            <!-- <a href="index.php?page=viewcart"> -->
+                            <a href="index.php?page=viewcart"
                                 class="header-action-btn header-action-btn-cart  pr-0">
                                 <i class="pe-7s-shopbag"></i>
                                 <span class="header-action-num">01</span>

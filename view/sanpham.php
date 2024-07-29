@@ -20,8 +20,16 @@ foreach ($dssp_all as $item) {
                                                         <a href="#" class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="pe-7s-search"></i></a>
                                                         <a href="compare.html" class="action compare" title="Compare"><i class="pe-7s-refresh-2"></i></a>
                                                     </div>
-                                                    <button title="Add To Cart" class=" add-to-cart">Add
-                                                        To Cart</button>
+                                                    <form method="post" action="index.php?page=cart" > 
+                                                        <input type="hidden" name="id" value="'.$id.'">
+                                                        <input type="hidden" name="hinh" value="'.$hinh.'">
+                                                        <input type="hidden" name="tensp" value="'.$ten_sp.'">
+                                                        <input type="hidden" name="gia" value="'.$gia.'">
+                                                        <input type="hidden" name="soluong" value="1">
+
+                                                        <button name="btncart" title="Add To Cart" class=" add-to-cart">Add
+                                                            To Cart</button>
+                                                    </form>
                                                 </div>
                                                 <div class="content">
                                                     <span class="ratings">
