@@ -278,6 +278,54 @@ foreach ( $sp_hot as $item){
                         </div>
                         
                     </div>
+                    <a href="index.php?page=sanpham" class="btn btn-lg btn-primary btn-hover-dark m-auto mb-3"> Xem thêm <i
+                            class="fa fa-arrow-right ml-15px" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Section Title Start -->
+                <div class="col-12">
+                    <div class="section-title text-center mb-0">
+                        <h2 class="title">#Sản phẩm bestseller</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="tab-content mb-30px0px">
+                        <!-- 1st tab start -->
+                        <div class="tab-pane fade show active" id="tab-product--all">
+                            <div class="row">  
+                           222222
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <a href="index.php?page=sanpham" class="btn btn-lg btn-primary btn-hover-dark m-auto mb-3"> Xem thêm <i
+                            class="fa fa-arrow-right ml-15px" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Section Title Start -->
+                <div class="col-12">
+                    <div class="section-title text-center mb-0">
+                        <h2 class="title">#Sản phẩm hot</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="tab-content mb-30px0px">
+                        <!-- 1st tab start -->
+                        <div class="tab-pane fade show active" id="tab-product--all">
+                            <div class="row">  
+                            <?=$txt_html_sp_hot;?>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
                     <a href="index.php?page=sanpham" class="btn btn-lg btn-primary btn-hover-dark m-auto"> Xem thêm <i
                             class="fa fa-arrow-right ml-15px" aria-hidden="true"></i></a>
                 </div>
