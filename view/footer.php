@@ -41,12 +41,12 @@
                                 <div class="footer-links">
                                     <div class="footer-row">
                                         <ul class="align-items-center">
-                                            <li class="li"><a class="single-link" href="#">Support
+                                            <li class="li"><a class="single-link" href="#">Hộ trợ
                                                 </a></li>
-                                            <li class="li"><a class="single-link" href="#">Helpline</a></li>
-                                            <li class="li"><a class="single-link" href="#">Courses</a></li>
-                                            <li class="li"><a class="single-link" href="about.html">About</a></li>
-                                            <li class="li"><a class="single-link" href="#">Event</a></li>
+                                            <li class="li"><a class="single-link" href="#">Liên hệ</a></li>
+                                            <li class="li"><a class="single-link" href="#">Tuyển dụng</a></li>
+                                            <li class="li"><a class="single-link" href="about.html">Gần đây</a></li>
+                                            <li class="li"><a class="single-link" href="#">Sự kiện</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -56,16 +56,16 @@
                         <!-- Start single blog -->
                         <div class="col-md-3 col-lg-2 col-sm-6 mb-lm-30px pl-lg-50px">
                             <div class="single-wedge">
-                                <h4 class="footer-herading">Other Page</h4>
+                                <h4 class="footer-herading">Trang khác</h4>
                                 <div class="footer-links">
                                     <div class="footer-row">
                                         <ul class="align-items-center">
-                                            <li class="li"><a class="single-link" href="about.html"> About </a>
+                                            <li class="li"><a class="single-link" href="about.html"> Sản phẩm </a>
                                             </li>
-                                            <li class="li"><a class="single-link" href="blog-grid.html">Blog</a></li>
-                                            <li class="li"><a class="single-link" href="#">Speakers</a></li>
-                                            <li class="li"><a class="single-link" href="contact.html">Contact</a></li>
-                                            <li class="li"><a class="single-link" href="#">Tricket</a></li>
+                                            <li class="li"><a class="single-link" href="blog-grid.html">Tin tức</a></li>
+                                            <li class="li"><a class="single-link" href="#">Về chúng tôi</a></li>
+                                            <li class="li"><a class="single-link" href="contact.html">Liên hệ</a></li>
+                                            <li class="li"><a class="single-link" href="#">cửa hàng</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -75,18 +75,18 @@
                         <!-- Start single blog -->
                         <div class="col-md-3 col-lg-2 col-sm-6 mb-lm-30px pl-lg-50px">
                             <div class="single-wedge">
-                                <h4 class="footer-herading">Company</h4>
+                                <h4 class="footer-herading">Liên kết</h4>
                                 <div class="footer-links">
                                     <div class="footer-row">
                                         <ul class="align-items-center">
-                                            <li class="li"><a class="single-link" href="index.html">Jesco</a>
+                                            <li class="li"><a class="single-link" href="#">Giới thiệu</a>
                                             </li>
-                                            <li class="li"><a class="single-link" href="shop-left-sidebar.html">Shop</a>
+                                            <li class="li"><a class="single-link" href="#">chất lượng </a>
                                             </li>
-                                            <li class="li"><a class="single-link" href="contact.html">Contact us</a>
+                                            <li class="li"><a class="single-link" href="#">đổi trả</a>
                                             </li>
-                                            <li class="li"><a class="single-link" href="login.html">Log in</a></li>
-                                            <li class="li"><a class="single-link" href="#">Help</a></li>
+                                            <li class="li"><a class="single-link" href="index.php?page=dangnhap">Đăng nhập</a></li>
+                                            <li class="li"><a class="single-link" href="#">Liên hệ</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -97,13 +97,13 @@
                         <div class="col-md-4 col-lg-3 col-sm-6">
                             <div class="single-wedge">
 
-                                <h4 class="footer-herading">Store Information.</h4>
+                                <h4 class="footer-herading">Trang thương mại thời trang Jesco</h4>
                                 <div class="footer-links">
                                     <!-- News letter area -->
-                                    <p class="address">2005 Your Address Goes Here. <br>
-                                        896, Address 10010, HGJ</p>
-                                    <p class="phone">Phone/Fax:<a href="tel:0123456789">0123456789</a></p>
-                                    <p class="mail">Email:<a href="mailto:demo@example.com">demo@example.com</a></p>
+                                    <p class="address">150 chi nhánh trên toàn quốc <br>
+                                        50 Công viên phần mềm quang trung</p>
+                                    <p class="phone">Số điện thoai: <a href="tel:0123456789"> 0123456789</a></p>
+                                    <p class="mail">Email:<a href="mailto:demo@example.com"> jesco@gmail.com</a></p>
                                     <img src="assets/images/icons/payment.png" alt="" class="payment-img img-fulid">
 
                                     <!-- News letter area  End -->

@@ -7,7 +7,7 @@ foreach ($dssp_all as $item) {
                                             <!-- Single Prodect -->
                                             <div class="product">
                                                 <div class="thumb">
-                                                    <a href="single-product.html" class="image">
+                                                    <a href="index.php?page=chitietsp&id='.$id.'" class="image">
                                                         <img src="'.$img.'" alt="Product" />
                                                         <img class="hover-image" src="'.$img.'" alt="Product" />
                                                     </a>
@@ -42,7 +42,7 @@ foreach ($dssp_all as $item) {
                                                         </a>
                                                     </h5>
                                                     <span class="price">
-                                                        <span class="new">'.$gia.'đ</span>
+                                                        <span class="new">'.number_format($gia).'đ</span>
                                                         <del>'.$giam_gia.'</del>
                                                         
                                                     </span>
@@ -157,7 +157,7 @@ foreach($dsdm_all as $item){
                 <div class="shop-sidebar-wrap">
                     <!-- Sidebar single item -->
                     <div class="sidebar-widget-search">
-                        <form id="widgets-searchbox" method="POST">
+                        <form action="index.php?page=sanpham" id="widgets-searchbox" method="POST">
                             <input class="input-field" name="kyw" type="text" placeholder="Tìm kiếm tại đây...">
                             <button class="widgets-searchbox-btn" type="submit" name="timkiem">
                                 <i class="fa fa-search"></i>

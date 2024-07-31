@@ -1,3 +1,5 @@
+
+
 <div class="breadcrumb-area">
         <div class="container">
             <div class="row align-items-center justify-content-center">
@@ -5,7 +7,7 @@
                     <h2 class="breadcrumb-title">Chi Tiết Sản Phẩm</h2>
                     <!-- breadcrumb-list start -->
                     <ul class="breadcrumb-list">
-                        <li class="breadcrumb-item"><a href="index.html">Trang Chủ</a></li>
+                        <li class="breadcrumb-item"><a href="index.php">Trang Chủ</a></li>
                         <li class="breadcrumb-item active">Chi Tiết Sản Phẩm</li>
                     </ul>
                     <!-- breadcrumb-list end -->
@@ -25,16 +27,16 @@
                         <div class="swiper-container zoom-thumbs-2 align-self-start ml-15px">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img class="img-responsive m-auto" src="assets/images/product-image/small-image/1.jpg" alt="">
+                                    <img class="img-responsive m-auto" src="assets/upload/<?=$chitietsp['hinh'];?>" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="img-responsive m-auto" src="assets/images/product-image/small-image/2.jpg" alt="">
+                                    <img class="img-responsive m-auto" src="assets/upload/<?=$chitietsp['hinh1'];?>" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="img-responsive m-auto" src="assets/images/product-image/small-image/3.jpg" alt="">
+                                    <img class="img-responsive m-auto" src="assets/upload/<?=$chitietsp['hinh2'];?>" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="img-responsive m-auto" src="assets/images/product-image/small-image/4.jpg" alt="">
+                                    <img class="img-responsive m-auto" src="assets/upload/<?=$chitietsp['hinh3'];?>" alt="">
                                 </div>
                             </div>
                         </div>
@@ -42,16 +44,16 @@
                         <div class="swiper-container zoom-top-2 align-self-start">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide zoom-image-hover">
-                                    <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/1.jpg" alt="">
+                                    <img class="img-responsive m-auto" src="assets/upload/<?=$chitietsp['hinh'];?>" alt="">
                                 </div>
                                 <div class="swiper-slide zoom-image-hover">
-                                    <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/2.jpg" alt="">
+                                    <img class="img-responsive m-auto" src="assets/upload/<?=$chitietsp['hinh1'];?>" alt="">
                                 </div>
                                 <div class="swiper-slide zoom-image-hover">
-                                    <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/3.jpg" alt="">
+                                    <img class="img-responsive m-auto" src="assets/upload/<?=$chitietsp['hinh2'];?>" alt="">
                                 </div>
                                 <div class="swiper-slide zoom-image-hover">
-                                    <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/4.jpg" alt="">
+                                    <img class="img-responsive m-auto" src="assets/upload/<?=$chitietsp['hinh3'];?>" alt="">
                                 </div>
                             </div>
                         </div>
@@ -59,13 +61,13 @@
                 </div>
                 <div class="col-lg-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="200">
                     <div class="product-details-content quickview-content">
-                        <h2>Ardene Microfiber Tights</h2>
+                        <h2><?=$chitietsp['ten_sp'];?></h2>
                         <div class="pricing-meta">
                             <ul>
-                                <li class="old-price not-cut">$18.90</li>
+                                <li class="old-price not-cut"></li><del><?=number_format($chitietsp['giam_gia']);?>đ</del>  &nbsp&nbsp&nbsp<?=number_format($chitietsp['gia']);?>đ
                             </ul>
                         </div>
-                        <div class="pro-details-rating-wrap">
+                        <!-- <div class="pro-details-rating-wrap">
                             <div class="rating-product">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -74,10 +76,8 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <span class="read-review"><a class="reviews" href="#">( 5 Customer Review )</a></span>
-                        </div>
-                        <p class="mt-30px mb-0">Lorem ipsum dolor sit amet, consect adipisicing elit, sed do eiusmod tempor incidi ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita ullamco laboris nisi
-                            ut aliquip ex ea commodo </p>
+                        </div> -->
+                        <p class="mt-30px mb-0"><?=$chitietsp['mo_ta'];?> </p>
                         <div class="pro-details-quality">
                             <div class="cart-plus-minus">
                                 <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
@@ -108,7 +108,7 @@
                                     <a href="#">Fashion.</a>
                                 </li>
                                 <li>
-                                    <a href="#">eCommerce</a>
+                                    <a href="#"><?=$chitietdm['ten_loai'];?></a>
                                 </li>
                             </ul>
                         </div>
@@ -144,18 +144,18 @@
         <div class="container">
             <div class="description-review-wrapper">
                 <div class="description-review-topbar nav">
-                    <a data-bs-toggle="tab" href="#des-details2">Information</a>
-                    <a class="active" data-bs-toggle="tab" href="#des-details1">Description</a>
-                    <a data-bs-toggle="tab" href="#des-details3">Reviews (02)</a>
+                    <a data-bs-toggle="tab" href="#des-details2">Thông tin</a>
+                    <a class="active" data-bs-toggle="tab" href="#des-details1">Về chúng tôi</a>
+                    <a data-bs-toggle="tab" href="#des-details3">Bình luận</a>
                 </div>
                 <div class="tab-content description-review-bottom">
                     <div id="des-details2" class="tab-pane">
                         <div class="product-anotherinfo-wrapper text-start">
                             <ul>
-                                <li><span>Weight</span> 400 g</li>
-                                <li><span>Dimensions</span>10 x 10 x 15 cm</li>
-                                <li><span>Materials</span> 60% cotton, 40% polyester</li>
-                                <li><span>Other Info</span> American heirloom jean shorts pug seitan letterpress</li>
+                                <li><span>Trọng lượng</span> 400 g</li>
+                                <li><span>Kích thước</span>10 x 10 x 15 cm</li>
+                                <li><span>Vật liệu</span> 60% cotton, 40% polyester.</li>
+                                <li><span>Thông tin khác</span> Quần jean gia truyền của Mỹ pug seitan letterpress.</li>
                             </ul>
                         </div>
                     </div>
@@ -163,17 +163,8 @@
                         <div class="product-description-wrapper">
                             <p>
 
-                                Lorem ipsum dolor sit amet, consectetur adipisi elit, incididunt ut labore et. Ut enim
-                                ad minim veniam, quis nostrud exercita ullamco laboris nisi ut aliquip ex ea commol
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
-                                natus error sit voluptatem accusantiulo doloremque laudantium, totam rem aperiam, eaque
-                                ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                                explicabo. Nemo enim ipsam voluptat quia voluptas sit aspernatur aut odit aut fugit, sed
-                                quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-                                quia non numquam eius modi tempora incidunt ut labore
+                                
+Jesco là một trang web chuyên bán quần áo thời trang hiện đại và chất lượng cao. Với mục tiêu mang đến cho khách hàng những bộ trang phục thời thượng và phong cách, Jesco cung cấp đa dạng các sản phẩm từ quần áo thường ngày, đồ công sở, đến trang phục dự tiệc. Các sản phẩm của Jesco được tuyển chọn kỹ lưỡng từ những thương hiệu nổi tiếng và đảm bảo đáp ứng nhu cầu của mọi lứa tuổi và phong cách. Bên cạnh đó, Jesco còn cam kết mang đến trải nghiệm mua sắm trực tuyến tiện lợi, dịch vụ khách hàng tận tâm, và chính sách đổi trả linh hoạt. Hãy khám phá và làm mới tủ đồ của bạn cùng Jesco ngay hôm nay!
 
                             </p>
                         </div>
@@ -296,7 +287,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title text-center mb-30px0px line-height-1">
-                        <h2 class="title m-0">Related Products</h2>
+                        <h2 class="title m-0">Sản phẩm liên quan</h2>
                     </div>
                 </div>
             </div>
@@ -343,6 +334,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="new-product-item swiper-slide">
                         <!-- Single Prodect -->
                         <div class="product">

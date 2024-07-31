@@ -8,10 +8,10 @@
                         <div class="row">
                             <div class="col-xl-6 col-lg-5 col-md-5 col-sm-5 align-self-center sm-center-view">
                                 <div class="hero-slide-content hero-slide-content-2 slider-animated-1">
-                                    <span class="category">Sale 45% Off</span>
-                                    <h2 class="title-1">Exclusive New<br> Offer 2021</h2>
-                                    <a href="shop-left-sidebar.html" class="btn btn-lg btn-primary btn-hover-dark"> Shop
-                                        Now <i class="fa fa-shopping-basket ml-15px" aria-hidden="true"></i></a>
+                                    <span class="category">Giảm giá đến 45%</span>
+                                    <h2 class="title-1">Ưu đãi <br> Khách hàng mới!</h2>
+                                    <a href="index.php?page=chitietsp&id=74" class="btn btn-lg btn-primary btn-hover-dark"> Mua
+                                        Ngay <i class="fa fa-shopping-basket ml-15px" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                             <div
@@ -31,10 +31,10 @@
                         <div class="row">
                             <div class="col-xl-6 col-lg-5 col-md-5 col-sm-5 align-self-center sm-center-view">
                                 <div class="hero-slide-content hero-slide-content-2 slider-animated-1">
-                                    <span class="category">Sale 45% Off</span>
-                                    <h2 class="title-1">Exclusive New<br> Offer 2021</h2>
-                                    <a href="shop-left-sidebar.html" class="btn btn-lg btn-primary btn-hover-dark"> Shop
-                                        Now <i class="fa fa-shopping-basket ml-15px" aria-hidden="true"></i></a>
+                                    <span class="category">Áp dụng từ 1/8 đến 1/9</span>
+                                    <h2 class="title-1">Mua 3 tặng 1 <br>Ưu đãi 70%  </h2>
+                                    <a href="index.php?page=sanpham" class="btn btn-lg btn-primary btn-hover-dark"> Mua
+                                        ngay <i class="fa fa-shopping-basket ml-15px" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                             <div
@@ -147,8 +147,8 @@ foreach ($spmoi as $item){
                                             <h5 class="title"><a href="single-product.html">'.$ten_sp.'
                                                     </a></h5>
                                             <span class="price">
-                                                <span class="new">'.$gia.'</span>
-                                                <span class="old">'.$giam_gia.'</span>
+                                                <span class="new">'.number_format($gia).'</span>
+                                                <span class="old">'.number_format($giam_gia).'</span>
                                             </span>
                                         </div>
                                     </div>
@@ -196,8 +196,8 @@ foreach ( $sp_bestseller as $item){
                                             <h5 class="title"><a href="single-product.html">'.$ten_sp.'
                                                     </a></h5>
                                             <span class="price">
-                                                <span class="new">'.$gia.'</span>
-                                                <span class="old">'.$giam_gia.'</span>
+                                                <span class="new">'.number_format($gia).'</span>
+                                                <span class="old">'.number_format($giam_gia).'</span>
                                             </span>
                                         </div>
                                     </div>
@@ -245,8 +245,8 @@ foreach ( $sp_hot as $item){
                                             <h5 class="title"><a href="single-product.html">'.$ten_sp.'
                                                     </a></h5>
                                             <span class="price">
-                                                <span class="new">'.$gia.'</span>
-                                                <span class="old">'.$giam_gia.'</span>
+                                                <span class="new">'.number_format($gia).'</span>
+                                                <span class="old">'.number_format($giam_gia).'</span>
                                             </span>
                                         </div>
                                     </div>
@@ -270,7 +270,7 @@ foreach ( $sp_hot as $item){
             <div class="row">
                 <div class="col">
                     <div class="tab-content mb-30px0px ">
-                        <!-- 1st tab start -->
+                     
                         <div class="tab-pane fade show active" id="tab-product--all">
                             <div class="row">  
                             <?=$txt_html_spmoi;?>
@@ -284,7 +284,7 @@ foreach ( $sp_hot as $item){
                 </div>
             </div>
             <div class="row">
-                <!-- Section Title Start -->
+         
                 <div class="col-12">
                     <div class="section-title text-center mb-0">
                         <h2 class="title">#Sản phẩm bestseller</h2>
@@ -294,7 +294,7 @@ foreach ( $sp_hot as $item){
             <div class="row">
                 <div class="col">
                     <div class="tab-content mb-30px0px">
-                        <!-- 1st tab start -->
+               
                         <div class="tab-pane fade show active" id="tab-product--all">
                             <div class="row"> 
                                 
@@ -309,8 +309,8 @@ foreach ( $sp_hot as $item){
                             class="fa fa-arrow-right ml-15px" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="row">
-                <!-- Section Title Start -->
+            <!-- <div class="row">
+               
                 <div class="col-12">
                     <div class="section-title text-center mb-0">
                         <h2 class="title">#Sản phẩm hot</h2>
@@ -320,25 +320,20 @@ foreach ( $sp_hot as $item){
             <div class="row">
                 <div class="col">
                     <div class="tab-content mb-30px0px">
-                        <!-- 1st tab start -->
                         <div class="tab-pane fade show active" id="tab-product--all">
                             <div class="row">  
-                            <?=$txt_html_sp_hot;?>
+                            // thêm code php vào đây
+
                             </div>
-                            
                         </div>
-                        
                     </div>
                     <a href="index.php?page=sanpham" class="btn btn-lg btn-primary btn-hover-dark m-auto"> Xem thêm <i
                             class="fa fa-arrow-right ml-15px" aria-hidden="true"></i></a>
                 </div>
-            </div>
+            </div> -->
             
             
-           
-        </div>
-    </div>
-    <div class="product-area pt-100px pb-100px">
+            <div class="product-area pt-100px pb-100px">
         <div class="container">
             <!-- Section Title & Tab Start -->
             <div class="row">
@@ -1317,6 +1312,11 @@ foreach ( $sp_hot as $item){
             </div>
         </div>
     </div>
+        </div>
+        
+    </div>
+    
+   
     
     
     

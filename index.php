@@ -34,11 +34,13 @@ switch($page){
     }
 
     // search
-    if(isset($_POST['timkiem'])&&($_POST['timkiem'])){
+    // Khi là nut button thì chỉ cần 1 điều kiện
+    // khi là nút input thì cần 2 điều kiện
+    if(isset($_POST['timkiem'])){
         $kyw = $_POST['kyw'];
     }else{
-    }
         $kyw = "";
+    }
         
     $start = 0;
     if (isset($_GET['pg'])) {
@@ -57,6 +59,21 @@ switch($page){
         break;
             
     case 'chitietsp':
+
+        if(isset($_GET['iddm'])&&(is_numeric($_GET['iddm']))&&($_GET['iddm']>0)){
+            $iddm= $_GET['iddm'];
+            $chitietdm=get_danhmuc_all($iddm);
+        }else{
+            $iddm =0;
+        }
+        // 
+        if(isset($_GET['id'])&&(is_numeric($_GET['id']))&&($_GET['id']>0)){
+            $idpro= $_GET['id'];
+            $chitietsp=get_one_product($idpro);
+        }else{
+            $idpro =0;
+            header('location: index.php');
+        }
         include_once 'view/chitietsp.php';
     break;
     
@@ -117,6 +134,7 @@ switch($page){
            $hoten=$_POST['hoten'];
     //insert den db
     $iduser=insert_user($username,$password,$email,$hoten);
+    
     //dang nhap
     //ghi nhan user vao session
     $_SESSION['ten']=$hoten;

@@ -6,7 +6,7 @@
         if($iddm>0){
             $sql .= " AND id_catalog=".$iddm;
         }
-        if($kyw!=""){
+        if($kyw != ""){
             $sql .= " AND ten_sp like '%".$kyw."%'";
         }
         if($limit>0){
