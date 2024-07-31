@@ -35,15 +35,15 @@
                                 <div class="login-form-container">
                                     <div class="login-register-form">
                                         <form action="" method="post">
-                                            <input type="text" name="user-name" placeholder="Username" />
-                                            <input type="password" name="user-password" placeholder="Password" />
+                                            <input type="text" name="user-name" placeholder="Tên đăng nhập" />
+                                            <input type="password" name="user-password" placeholder="Mật khẩu" />
                                             <div class="button-box">
                                                 <div class="login-toggle-btn">
                                                     <input type="checkbox" />
-                                                    <a class="flote-none" href="javascript:void(0)">Remember me</a>
-                                                    <a href="#">Forgot Password?</a>
+                                                    <a class="flote-none" href="javascript:void(0)"> Ghi nhớ</a>
+                                                    <a href="#">Quên mật khẩu?</a>
                                                 </div>
-                                                <button type="submit"><span>Login</span></button>
+                                                <button type="submit"><span>Đăng nhập</span></button>
                                             </div>
                                         </form>
                                     </div>
@@ -53,13 +53,14 @@
                                 <div class="login-form-container">
                                     <div class="login-register-form">
                                         <form action="index.php?page=dangnhap" method="post">
-                                            <input type="text" name="username" placeholder="Username" id="username" require/>
+                                            <input type="text" name="username" placeholder="Tên đăng nhập" id="username" require/>
                                             <input name="email" placeholder="Email" type="email" id="email" require />
-                                            <input type="password" name="password" placeholder="Password" id="password" require/>
-                                            <input name="password-rp"  placeholder="Password-rp" type="password" id="passpord-rp" require/>
+                                            <input type="text" name="hoten" placeholder="Họ tên" type="hoten" id="hoten" require />
+                                            <input type="password" name="password" placeholder="Mật khẩu" id="password" require/>
+                                            <input name="password-rp"  placeholder="Nhập lại mật khẩu" type="password" id="passpord-rp" require/>
                                             
                                             <div class="button-box">
-                                                <button name="btn-dangky" type="submit"><span>Register</span></button>
+                                                <button name="btn-dangky" type="submit"><span>Đăng ký</span></button>
                                             </div>
                                         </form>
                                     </div>

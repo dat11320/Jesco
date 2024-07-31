@@ -54,7 +54,7 @@ $html_dsdm_all="";
 foreach($dsdm_all as $item){
     extract($item);
     $html_dsdm_all.='
-    <li><a href="index.php?page=sanpham&iddm='.$id.'" class="">'.$ten_loai.'<span>(4)</span> </a></li>
+    <li><a href="index.php?page=sanpham&iddm='.$id.'" class="">'.$ten_loai.'<span></span> </a></li>
     
     ';
 }
@@ -84,7 +84,7 @@ foreach($dsdm_all as $item){
                 <!-- Shop Top Area Start -->
                 <div class="shop-top-bar d-flex">
                     <!-- Left Side start -->
-                    <p><span>12</span> sản phẩm của <span>30</span></p>
+                    <p><span>6</span> sản phẩm của <span>30</span></p>
                     <!-- Left Side End -->
                     <div class="shop-tab nav">
                         <a class="active" href="#shop-grid" data-bs-toggle="tab">
@@ -172,7 +172,7 @@ foreach($dsdm_all as $item){
                         <div class="sidebar-widget-category">
                             
                             <ul>
-                                <li><a href="index.php?page=sanpham" class="selected m-0">TẤT CẢ DANH MỤC <span>(6)</span> </a></li>
+                                <li><a href="index.php?page=sanpham" class="selected m-0">TẤT CẢ DANH MỤC <span></span> </a></li>
                                  <?=$html_dsdm_all?>
                                 
                             </ul>

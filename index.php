@@ -37,14 +37,17 @@ switch($page){
     if(isset($_POST['timkiem'])&&($_POST['timkiem'])){
         $kyw = $_POST['kyw'];
     }else{
-        $kyw = "";
     }
+        $kyw = "";
         
-
-    $dssp_all = get_dssp_all($kyw,$iddm, 6);
+    $start = 0;
+    if (isset($_GET['pg'])) {
+        $start = ($_GET['pg'] - 1) * 6;
+    }
+    $dssp_all = get_dssp_phantrang($kyw, $iddm, $start , 6);
 
     $tongsp_nolimit  = get_dssp_all($kyw,$iddm, 0);
-    $hienthisotrang= hienthisotrang(count($tongsp_nolimit) );
+    $hienthisotrang= hienthisotrang(count($tongsp_nolimit),$iddm);
 
     include_once 'view/sanpham.php';
     break; 
@@ -111,19 +114,20 @@ switch($page){
            $username=$_POST['username'];
            $email=$_POST['email'];
            $password=$_POST['password'];
+           $hoten=$_POST['hoten'];
     //insert den db
-    $iduser=insert_user($username,$password,$email);
+    $iduser=insert_user($username,$password,$email,$hoten);
     //dang nhap
     //ghi nhan user vao session
-    $_SESSION['iduser']=$iduser;
+    $_SESSION['ten']=$hoten;
     //chuyen den trang gi do khi thanh cong
     header('location: index.php');
         }
         include_once 'view/dangnhap.php';
         break;
         case 'logout':
-            if(isset($_SESSION['iduser'])){
-                unset($_SESSION['iduser']);
+            if(isset($_SESSION['ten'])){
+                unset($_SESSION['ten']);
                 header('location: index.php');
             }
             break;

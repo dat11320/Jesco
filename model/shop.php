@@ -17,13 +17,45 @@
         }
         return pdo_query_all($sql);  
     }
-    function hienthisotrang($tongsp_nolimit){
+
+    function get_dssp_phantrang($keyword, $categoryId, $start , $limit){
+        $sql = "SELECT  *,sp.id, dm.ten_loai FROM sanpham sp INNER JOIN danhmuc dm ON sp.id_catalog = dm.id WHERE 1";
+    
+        if($categoryId > 0){     
+                $sql .=" AND sp.id_catalog=".$categoryId;
+        }
+        
+        if($keyword != ""){
+            $sql .=" AND sp.ten_sp like '%".$keyword."%'";
+        }
+    
+        if ($limit > 0) {
+            $sql .= " ORDER BY sp.id DESC LIMIT ".$start.", ".$limit;
+        }
+    
+        // $sql .= " ORDER BY sp.id DESC LIMIT ".$limit;
+        // 1-1 * 11 -> 0
+        // 2-1 * 11 -> 11
+        // 3-1 * 11 -> 22
+        return pdo_query_all($sql);
+    }
+
+    
+    function hienthisotrang($tongsp_nolimit,$categoryId){
         $sotrang=ceil($tongsp_nolimit/SO_SP_TRANG);
         $dssotrang="";
-        for($i=1;$i<=$sotrang;$i++){
-            $dssotrang.="<li class='page-item'><a class='page-link' href='#'>".$i."</a></li>";
-            
+        if($categoryId == 0){
+            for($i=1;$i<=$sotrang;$i++){
+                $dssotrang.="<li class='page-item'><a class='page-link' href='index.php?page=sanpham&pg=".$i."'>".$i."</a></li>";
+                
+            }
+        }else{
+            for($i=1;$i<=$sotrang;$i++){
+                $dssotrang.="<li class='page-item'><a class='page-link' href='index.php?page=sanpham&iddm=".$categoryId."&pg=".$i."'>".$i."</a></li>";
+                
+            }    
         }
+        
         return $dssotrang;
     }  
         

@@ -61,12 +61,12 @@
                                 ></a>
                                 <div class="header-actions">
                             <?php 
-                            if(isset($_SESSION['iduser'])){
+                            if(isset($_SESSION['ten'])){
                                 echo '<a href="index.php?page=dangnhap" class=" login-btn" 
-                                >'.$_SESSION['iduser'].'</a>
+                                >'.$_SESSION['ten'].'</a>
                             ';
                             echo '<a href="index.php?page=logout" class=" login-btn" 
-                                >thoat</a>
+                                >Đăng xuất</a>
                             ';
                             }else{
                                 echo'<a href="index.php?page=dangnhap" class=" login-btn" 

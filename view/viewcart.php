@@ -58,12 +58,12 @@
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Image</th>
-                                        <th>Product Name</th>
-                                        <th>Until Price</th>
-                                        <th>Qty</th>
-                                        <th>Subtotal</th>
-                                        <th>Add To Cart</th>
+                                        <th>Ảnh</th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Giá sản phẩm</th>
+                                        <th>Số lượng</th>
+                                        <th>Thành tiền</th>
+                                        <th>Xóa sản phẩm</th>
                                         
                                     </tr>
                                 </thead>

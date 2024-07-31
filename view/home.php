@@ -161,6 +161,7 @@ foreach ( $sp_bestseller as $item){
    $img= DIR_UPLOAD_IMG.$hinh;
    $txt_html_sp_bestseller.='
                
+                                
            <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-xs-6 mb-30px" data-aos="fade-up"
                                     data-aos-delay="600">
                                     <!-- Single Prodect -->
@@ -200,7 +201,7 @@ foreach ( $sp_bestseller as $item){
                                             </span>
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
         ';
 }
 
@@ -295,8 +296,10 @@ foreach ( $sp_hot as $item){
                     <div class="tab-content mb-30px0px">
                         <!-- 1st tab start -->
                         <div class="tab-pane fade show active" id="tab-product--all">
-                            <div class="row">  
+                            <div class="row"> 
+                                
                             <?=$txt_html_sp_bestseller;?>
+                                
                             </div>
                             
                         </div>
@@ -372,88 +375,10 @@ foreach ( $sp_hot as $item){
                         <div class="tab-pane fade show active" id="tab-product-all">
                             <div class="new-product-slider swiper-container slider-nav-style-1 small-nav">
                                 <div class="new-product-wrapper swiper-wrapper">
+                                <?=$txt_html_sp_hot;?>
                                     <div class="new-product-item swiper-slide">
                                         <!-- Single Prodect -->
-                                        <div class="product">
-                                            <div class="thumb">
-                                                <a href="single-product.html" class="image">
-                                                    <img src="assets/images/product-image/8.jpg" alt="Product" />
-                                                    <img class="hover-image" src="assets/images/product-image/6.jpg"
-                                                        alt="Product" />
-                                                </a>
-                                                <span class="badges">
-                                                    <span class="new">New</span>
-                                                </span>
-                                                <div class="actions">
-                                                    <a href="wishlist.html" class="action wishlist" title="Wishlist"><i
-                                                            class="pe-7s-like"></i></a>
-                                                    <a href="#" class="action quickview" data-link-action="quickview"
-                                                        title="Quick view" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal"><i class="pe-7s-search"></i></a>
-                                                    <a href="compare.html" class="action compare" title="Compare"><i
-                                                            class="pe-7s-refresh-2"></i></a>
-                                                </div>
-                                                <button title="Add To Cart" class=" add-to-cart">Add
-                                                    To Cart</button>
-                                            </div>
-                                            <div class="content">
-                                                <span class="ratings">
-                                                    <span class="rating-wrap">
-                                                        <span class="star" style="width: 100%"></span>
-                                                    </span>
-                                                    <span class="rating-num">( 5 Review )</span>
-                                                </span>
-                                                <h5 class="title"><a href="single-product.html">Women's Elizabeth
-                                                        Coat
-                                                    </a>
-                                                </h5>
-                                                <span class="price">
-                                                    <span class="new">$38.50</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="new-product-item swiper-slide">
-                                        <!-- Single Prodect -->
-                                        <div class="product">
-                                            <div class="thumb">
-                                                <a href="single-product.html" class="image">
-                                                    <img src="assets/images/product-image/9.jpg" alt="Product" />
-                                                    <img class="hover-image" src="assets/images/product-image/5.jpg"
-                                                        alt="Product" />
-                                                </a>
-                                                <span class="badges">
-                                                    <span class="sale">-10%</span>
-                                                    <span class="new">New</span>
-                                                </span>
-                                                <div class="actions">
-                                                    <a href="wishlist.html" class="action wishlist" title="Wishlist"><i
-                                                            class="pe-7s-like"></i></a>
-                                                    <a href="#" class="action quickview" data-link-action="quickview"
-                                                        title="Quick view" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal"><i class="pe-7s-search"></i></a>
-                                                    <a href="compare.html" class="action compare" title="Compare"><i
-                                                            class="pe-7s-refresh-2"></i></a>
-                                                </div>
-                                                <button title="Add To Cart" class=" add-to-cart">Add
-                                                    To Cart</button>
-                                            </div>
-                                            <div class="content">
-                                                <span class="ratings">
-                                                    <span class="rating-wrap">
-                                                        <span class="star" style="width: 80%"></span>
-                                                    </span>
-                                                    <span class="rating-num">( 4 Review )</span>
-                                                </span>
-                                                <h5 class="title"><a href="single-product.html">Ardene Microfiber
-                                                        Tights</a>
-                                                </h5>
-                                                <span class="price">
-                                                    <span class="new">$38.50</span>
-                                                    <span class="old">$48.50</span>
-                                                </span>
-                                            </div>
-                                        </div>
+                                        
                                         <!-- Single Prodect -->
                                     </div>
                                     <div class="new-product-item swiper-slide">
@@ -623,8 +548,11 @@ foreach ( $sp_hot as $item){
                                         </div>
                                         <!-- Single Prodect -->
                                     </div>
+                               
+                                        
                                 </div>
-                                <!-- Add Arrows -->
+                                    
+                                <!-- Add Arrows --> 
                                 <div class="swiper-buttons">
                                     <div class="swiper-button-next"></div>
                                     <div class="swiper-button-prev"></div>
@@ -636,47 +564,7 @@ foreach ( $sp_hot as $item){
                         <div class="tab-pane fade" id="tab-product-new">
                             <div class="new-product-slider swiper-container slider-nav-style-1 small-nav">
                                 <div class="new-product-wrapper swiper-wrapper">
-                                    <div class="new-product-item swiper-slide">
-                                        <!-- Single Prodect -->
-                                        <div class="product">
-                                            <div class="thumb">
-                                                <a href="single-product.html" class="image">
-                                                    <img src="assets/images/product-image/8.jpg" alt="Product" />
-                                                    <img class="hover-image" src="assets/images/product-image/6.jpg"
-                                                        alt="Product" />
-                                                </a>
-                                                <span class="badges">
-                                                    <span class="new">New</span>
-                                                </span>
-                                                <div class="actions">
-                                                    <a href="wishlist.html" class="action wishlist" title="Wishlist"><i
-                                                            class="pe-7s-like"></i></a>
-                                                    <a href="#" class="action quickview" data-link-action="quickview"
-                                                        title="Quick view" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal"><i class="pe-7s-search"></i></a>
-                                                    <a href="compare.html" class="action compare" title="Compare"><i
-                                                            class="pe-7s-refresh-2"></i></a>
-                                                </div>
-                                                <button title="Add To Cart" class=" add-to-cart">Add
-                                                    To Cart</button>
-                                            </div>
-                                            <div class="content">
-                                                <span class="ratings">
-                                                    <span class="rating-wrap">
-                                                        <span class="star" style="width: 100%"></span>
-                                                    </span>
-                                                    <span class="rating-num">( 5 Review )</span>
-                                                </span>
-                                                <h5 class="title"><a href="single-product.html">Women's Elizabeth
-                                                        Coat
-                                                    </a>
-                                                </h5>
-                                                <span class="price">
-                                                    <span class="new">$38.50</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <?=$txt_html_spmoi;?>
                                     <div class="new-product-item swiper-slide">
                                         <!-- Single Prodect -->
                                         <div class="product">
